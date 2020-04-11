@@ -6,25 +6,32 @@
 </script>
 
 <style>
-  h2 {
-    color: #ff3e00;
-  }
   .form-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    padding-top: 2rem;
   }
   .form {
     display: flex;
     flex-direction: column;
+  }
+  button {
+    height: 24px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+  }
+  p {
+    font-size: 0.7rem;
   }
 </style>
 
 <div class="form-wrapper">
   <div class="form">
-    <h2>Join the world of vendors</h2>
     <input placeholder="username" />
     <input placeholder="password" />
-    <Button>Submit</Button>
+    <button>
+      <p>register</p>
+    </button>
   </div>
 </div>

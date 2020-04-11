@@ -3,14 +3,14 @@
   "file": "bundle.css",
   "sources": [
     "../../App.svelte",
-    "../../Button.svelte",
-    "../../Form.svelte"
+    "../../Landing.svelte",
+    "../../Banner.svelte"
   ],
   "sourcesContent": [
-    "<script>\n  import Form from \"./components/Form.svelte\";\n</script>\n\n<style>\n  main {\n    text-align: center;\n    padding: 1em;\n    max-width: 240px;\n    margin: 0 auto;\n  }\n\n  h1 {\n    color: #ff3e00;\n    text-transform: uppercase;\n    font-size: 4em;\n    font-weight: 100;\n  }\n\n  @media (min-width: 640px) {\n    main {\n      max-width: none;\n    }\n  }\n</style>\n\n<main>\n  <h1>QuickSt.</h1>\n  <Form />\n</main>\n",
-    "<style>\n  button {\n    color: #ff3e00;\n    text-transform: uppercase;\n  }\n</style>\n\n<button on:click>\n  <slot />\n</button>\n",
-    "<script>\n  import Button from \"../components/Button.svelte\";\n\n  let username = \"\";\n  let password = \"\";\n</script>\n\n<style>\n  h2 {\n    color: #ff3e00;\n  }\n  .form-wrapper {\n    display: flex;\n    justify-content: center;\n  }\n  .form {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n  }\n</style>\n\n<div class=\"form-wrapper\">\n  <div class=\"form\">\n    <h2>Join the world of vendors</h2>\n    <input placeholder=\"username\" />\n    <input placeholder=\"password\" />\n    <Button>Submit</Button>\n  </div>\n</div>\n"
+    "<script>\n  import Landing from \"./Pages/Landing.svelte\";\n</script>\n\n<style>\n  main {\n    text-align: center;\n    padding: 1em;\n    max-width: 240px;\n    margin: 0 auto;\n  }\n\n  @media (min-width: 640px) {\n    main {\n      max-width: none;\n    }\n  }\n</style>\n\n<main>\n  <Landing />\n</main>\n",
+    "<script>\n  // your script goes here\n</script>\n\n<style>\n  /* your styles go here */\n  .banner-container {\n    background-color: blueviolet;\n    background-repeat: no-repeat;\n    background-size: 100% auto;\n  }\n</style>\n\n<div class=\"banner-container\">\n  <image src={banner} alt=\"banner\" />\n</div>\n",
+    "<script>\n  let src = \"images/hero-banner.png\";\n</script>\n\n<style>\n  div {\n    background-image: url({src});\n  }\n</style>\n\n<div>\n  <!-- <img {src} alt=\"banner\" /> -->\n</div>\n"
   ],
   "names": [],
-  "mappings": "AAKE,IAAI,eAAC,CAAC,AACJ,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,GAAG,CACZ,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,CAAC,CAAC,IAAI,AAChB,CAAC,AAED,EAAE,eAAC,CAAC,AACF,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,CACzB,SAAS,CAAE,GAAG,CACd,WAAW,CAAE,GAAG,AAClB,CAAC,AAED,MAAM,AAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzB,IAAI,eAAC,CAAC,AACJ,SAAS,CAAE,IAAI,AACjB,CAAC,AACH,CAAC;ACtBD,MAAM,cAAC,CAAC,AACN,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,AAC3B,CAAC;ACID,EAAE,eAAC,CAAC,AACF,KAAK,CAAE,OAAO,AAChB,CAAC,AACD,aAAa,eAAC,CAAC,AACb,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,AACzB,CAAC,AACD,KAAK,eAAC,CAAC,AACL,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,eAAe,CAAE,MAAM,AACzB,CAAC"
+  "mappings": "AAKE,IAAI,eAAC,CAAC,AACJ,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,GAAG,CACZ,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,CAAC,CAAC,IAAI,AAChB,CAAC,AAED,MAAM,AAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzB,IAAI,eAAC,CAAC,AACJ,SAAS,CAAE,IAAI,AACjB,CAAC,AACH,CAAC;ACVD,iBAAiB,eAAC,CAAC,AACjB,gBAAgB,CAAE,UAAU,CAC5B,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,IAAI,CAAC,IAAI,AAC5B,CAAC;ACLD,GAAG,eAAC,CAAC,AACH,gBAAgB,CAAE,IAAI,KAAK,CAAC,AAC9B,CAAC"
 }
