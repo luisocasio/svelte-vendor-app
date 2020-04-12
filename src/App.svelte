@@ -2,6 +2,8 @@
   import { Router, Route } from "svelte-routing";
   import Landing from "./Pages/Landing.svelte";
   import Register from "./Pages/Register.svelte";
+
+  let url = "";
 </script>
 
 <style>
@@ -21,11 +23,11 @@
 
 <main>
 
-  <Router>
-    <Route path="/">
+  <Router {url}>
+    <Route exact path="/">
       <Landing />
     </Route>
-    <Route path="/register" component={Register}>
+    <Route path="/register">
       <Register />
     </Route>
   </Router>
