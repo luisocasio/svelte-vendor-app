@@ -521,6 +521,18 @@ var app = (function () {
     	let p8;
     	let t23;
     	let p9;
+    	let t25;
+    	let div;
+    	let img0;
+    	let img0_src_value;
+    	let t26;
+    	let img1;
+    	let img1_src_value;
+    	let t27;
+    	let img2;
+    	let img2_src_value;
+    	let t28;
+    	let p10;
 
     	const block = {
     		c: function create() {
@@ -566,24 +578,49 @@ var app = (function () {
     			t23 = space();
     			p9 = element("p");
     			p9.textContent = "Swag";
-    			add_location(h30, file, 25, 4, 411);
-    			add_location(p0, file, 26, 4, 432);
-    			add_location(p1, file, 27, 4, 452);
-    			add_location(p2, file, 28, 4, 471);
-    			add_location(section0, file, 24, 2, 397);
-    			add_location(h31, file, 31, 4, 515);
-    			add_location(p3, file, 32, 4, 538);
-    			add_location(p4, file, 33, 4, 555);
-    			add_location(p5, file, 34, 4, 584);
-    			add_location(p6, file, 35, 4, 602);
-    			add_location(section1, file, 30, 2, 501);
-    			add_location(h32, file, 38, 4, 659);
-    			add_location(p7, file, 39, 4, 680);
-    			add_location(p8, file, 40, 4, 702);
-    			add_location(p9, file, 41, 4, 718);
-    			add_location(section2, file, 37, 2, 645);
-    			attr_dev(footer, "class", "svelte-1kad1qb");
-    			add_location(footer, file, 22, 0, 385);
+    			t25 = space();
+    			div = element("div");
+    			img0 = element("img");
+    			t26 = space();
+    			img1 = element("img");
+    			t27 = space();
+    			img2 = element("img");
+    			t28 = space();
+    			p10 = element("p");
+    			p10.textContent = "© 2019 Quick Street, All rights reserved | Terms Of Service | Privacy Policy";
+    			add_location(h30, file, 32, 4, 515);
+    			add_location(p0, file, 33, 4, 536);
+    			add_location(p1, file, 34, 4, 556);
+    			add_location(p2, file, 35, 4, 575);
+    			add_location(section0, file, 31, 2, 501);
+    			add_location(h31, file, 38, 4, 619);
+    			add_location(p3, file, 39, 4, 642);
+    			add_location(p4, file, 40, 4, 659);
+    			add_location(p5, file, 41, 4, 688);
+    			add_location(p6, file, 42, 4, 706);
+    			add_location(section1, file, 37, 2, 605);
+    			add_location(h32, file, 45, 4, 763);
+    			add_location(p7, file, 46, 4, 784);
+    			add_location(p8, file, 47, 4, 806);
+    			add_location(p9, file, 48, 4, 822);
+    			if (img0.src !== (img0_src_value = "/images/fb.png")) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "fb");
+    			attr_dev(img0, "class", "svelte-84agqv");
+    			add_location(img0, file, 50, 6, 871);
+    			if (img1.src !== (img1_src_value = "/images/snap.png")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "snapchat");
+    			attr_dev(img1, "class", "svelte-84agqv");
+    			add_location(img1, file, 51, 6, 915);
+    			if (img2.src !== (img2_src_value = "images/twitter.png")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "twitter");
+    			attr_dev(img2, "class", "svelte-84agqv");
+    			add_location(img2, file, 52, 6, 967);
+    			attr_dev(div, "class", "social-media svelte-84agqv");
+    			add_location(div, file, 49, 4, 838);
+    			add_location(section2, file, 44, 2, 749);
+    			attr_dev(footer, "class", "svelte-84agqv");
+    			add_location(footer, file, 29, 0, 489);
+    			add_location(p10, file, 57, 0, 1049);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -618,12 +655,23 @@ var app = (function () {
     			append_dev(section2, p8);
     			append_dev(section2, t23);
     			append_dev(section2, p9);
+    			append_dev(section2, t25);
+    			append_dev(section2, div);
+    			append_dev(div, img0);
+    			append_dev(div, t26);
+    			append_dev(div, img1);
+    			append_dev(div, t27);
+    			append_dev(div, img2);
+    			insert_dev(target, t28, anchor);
+    			insert_dev(target, p10, anchor);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(footer);
+    			if (detaching) detach_dev(t28);
+    			if (detaching) detach_dev(p10);
     		}
     	};
 

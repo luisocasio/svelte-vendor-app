@@ -4,6 +4,9 @@
 
 <style>
   /* your styles go here */
+  img {
+    width: 20%;
+  }
   footer {
     position: static;
     left: 0;
@@ -16,6 +19,10 @@
     display: flex;
     justify-content: space-around;
     color: white;
+  }
+  .social-media {
+    display: flex;
+    justify-content: space-around;
   }
 </style>
 
@@ -40,6 +47,14 @@
     <p>Mobile App</p>
     <p>Help</p>
     <p>Swag</p>
+    <div class="social-media">
+      <img src="/images/fb.png" alt="fb" />
+      <img src="/images/snap.png" alt="snapchat" />
+      <img src="images/twitter.png" alt="twitter" />
+    </div>
   </section>
 
 </footer>
+<p>
+  © 2019 Quick Street, All rights reserved | Terms Of Service | Privacy Policy
+</p>
