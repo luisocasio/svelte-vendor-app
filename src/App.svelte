@@ -1,5 +1,7 @@
 <script>
+  import { Router, Route } from "svelte-routing";
   import Landing from "./Pages/Landing.svelte";
+  import Register from "./Pages/Register.svelte";
 </script>
 
 <style>
@@ -18,5 +20,13 @@
 </style>
 
 <main>
-  <Landing />
+
+  <Router>
+    <Route path="/">
+      <Landing />
+    </Route>
+    <Route path="/register" component={Register}>
+      <Register />
+    </Route>
+  </Router>
 </main>
