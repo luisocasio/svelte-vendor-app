@@ -45,6 +45,14 @@
     background-color: crimson;
     color: white;
   }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background-color: crimson;
+  }
 </style>
 
 <div class="banner-container">
@@ -70,3 +78,5 @@
 </div>
 
 <h1>Under construction!</h1>
+
+<footer>Welcome from vendors all around you.</footer>
