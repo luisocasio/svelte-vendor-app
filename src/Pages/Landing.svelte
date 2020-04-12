@@ -15,10 +15,10 @@
     color: white;
   }
   .banner-container {
-    background-image: url("/images/hero-banner.png");
+    background-image: url("/images/hero-banner.jpeg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    min-height: 48rem;
+    min-height: 50rem;
   }
   .immediate-actions {
     display: flex;
@@ -27,11 +27,14 @@
     width: 25%;
     padding-top: 2.5rem;
     padding-left: 2.5rem;
+    text-align: center;
   }
   .action-buttons {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-items: center;
+    align-items: center;
+
     justify-content: space-around;
     padding-top: 5rem;
   }
@@ -39,19 +42,10 @@
     height: 52px;
     width: 302px;
     margin-top: 2rem;
-    margin-left: 1rem;
     border-radius: 5px;
     opacity: 0.9;
     background-color: crimson;
     color: white;
-  }
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    clear: both;
-    background-color: crimson;
   }
 </style>
 
@@ -64,19 +58,16 @@
     </p>
     <div class="action-buttons">
 
-      <Router>
-        <a href="/register" use:link register>
-          <button>Join Us</button>
-        </a>
+      <a href="/register" use:link register>
+        <button>Join Us</button>
+      </a>
 
-        <a href="/login" use:link login>
-          <button>Login</button>
-        </a>
-      </Router>
+      <a href="/login" use:link login>
+        <button>Login</button>
+      </a>
+
     </div>
   </div>
 </div>
 
 <h1>Under construction!</h1>
-
-<footer>Welcome from vendors all around you.</footer>

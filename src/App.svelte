@@ -1,4 +1,5 @@
 <script>
+  import Footer from "./components/Footer.svelte";
   import { Router, Route } from "svelte-routing";
   import Landing from "./Pages/Landing.svelte";
   import Register from "./Pages/Register.svelte";
@@ -9,7 +10,6 @@
 <style>
   main {
     text-align: center;
-    padding: 1em;
     max-width: 240px;
     margin: 0 auto;
   }
@@ -22,7 +22,6 @@
 </style>
 
 <main>
-
   <Router {url}>
     <Route exact path="/">
       <Landing />
@@ -31,4 +30,5 @@
       <Register />
     </Route>
   </Router>
+  <Footer />
 </main>

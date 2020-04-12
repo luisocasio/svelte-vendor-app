@@ -1,5 +1,6 @@
 <script>
-  import { onMount } from "svelte";
+  import Navigation from "./../components/Navigation.svelte";
+  // import { onMount } from "svelte";
   import {
     emailValidator,
     requiredValidator,
@@ -26,6 +27,17 @@
 </script>
 
 <style>
+  p {
+    width: 20%;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-radius: 10px;
+    padding: 2.5%;
+  }
   .register-container {
     background-image: url("/images/meditate_girl.png");
     background-repeat: no-repeat;
@@ -50,10 +62,26 @@
     border-radius: 5px;
     color: crimson;
   }
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .testimonial-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .testiomonial-quotes {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    border-radius: 50%;
+  }
 </style>
 
 <div class="register-container">
-
+  <Navigation />
   <div class="register-title">
     <h1>Join the social market for vendors</h1>
   </div>
@@ -92,5 +120,32 @@
         Register
       </button>
     </form>
+  </div>
+</div>
+
+<h1>Testimonials from people of all places. Bringing communities together.</h1>
+
+<div class="testimonial-container">
+
+  <div class="testimonial-wrapper">
+    <img src="/images/testimonial3.png" alt="testimonial-3-photo" />
+    <img src="/images/testimonial1.png" alt="testimonial-1-photo" />
+    <img src="/images/testimonial2.png" alt="testimonial-2-photo" />
+  </div>
+
+  <div class="testiomonial-quotes">
+    <p>
+      “I just moved to Austin and wanted to support local from the start. This
+      made it so easy!” - Alandra S.
+    </p>
+
+    <p>
+      “I just moved to Austin and wanted to support local from the start. This
+      made it so easy!” - Alandra S.
+    </p>
+    <p>
+      “I just moved to Austin and wanted to support local from the start. This
+      made it so easy!” - Alandra S.
+    </p>
   </div>
 </div>
