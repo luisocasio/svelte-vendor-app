@@ -4,6 +4,13 @@
   import Landing from "./Pages/Landing.svelte";
   import Register from "./Pages/Register.svelte";
 
+  import Nested from "./components/Nested.svelte";
+  import { counter } from "./Store/store";
+
+  function incrementCounter() {
+    counter.update(n => n + 1);
+  }
+
   let url = "";
 </script>
 
@@ -31,4 +38,8 @@
     </Route>
   </Router>
   <Footer />
+  <div>
+    <button on:click={incrementCounter}>Update</button>
+    <Nested />
+  </div>
 </main>
