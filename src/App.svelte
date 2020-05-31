@@ -5,7 +5,7 @@
   import Register from "./Pages/Register.svelte";
 
   import Nested from "./components/Nested.svelte";
-  import { counter } from "./Store/store";
+  import { counter } from "./Store/UserStore";
 
   function incrementCounter() {
     counter.update(n => n + 1);
