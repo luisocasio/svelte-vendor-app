@@ -1,5 +1,3 @@
-<script>
+<!-- <script>
   import { counter } from "../Store/store.js";
-</script>
-
-<div>counter value: {$counter}</div>
+</script><div>counter value: {$counter}</div> -->
